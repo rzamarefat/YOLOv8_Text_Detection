@@ -2,6 +2,8 @@ from ultralytics import YOLO
 import torch
 import warnings
 import cv2
+import os 
+import gdown
 
 
 class Yolov8TextDetection():
@@ -11,9 +13,19 @@ class Yolov8TextDetection():
         if not(torch.cuda.is_available()) and self._device == "cuda":
             warnings.warn("The device is set to cuda but there is no cuda device available. The algorithm will continue in cpu!!!")
 
+        self._mdoel_ckpt_path = os.path.join(os.getcwd(), "weights", "yolov8_text.pt")
+
+        if not(os.path.isfile(self._mdoel_ckpt_path)):
+            os.makedirs(os.path.join(os.getcwd(), "weights"), exist_ok=True)
+            gdown.download(
+                    "https://drive.google.com/uc?id=1X8OVqXQ6ubsFV-nL4d1xmnKvXj2w5mFS",
+                    self._mdoel_ckpt_path,
+                    quiet=False
+                    )
+        
 
         try:
-            self._model = YOLO(r"C:\Users\ASUS\Desktop\github_projects\YOLOv8_Text_Detection\weights\best.pt")
+            self._model = YOLO(self._mdoel_ckpt_path)
         except Exception as e:
             print(e)
 
