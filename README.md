@@ -17,7 +17,7 @@ pip install yolotext
 from glob import glob
 import cv2
 from yolotext import Yolov8TextDetection
-images = [cv2.imread(p) for p in sorted(glob(r"C:\Users\ASUS\Desktop\github_projects\YOLOv8_Text_Detection\images\*.jpg"))]
+images = [cv2.imread(p) for p in sorted(glob(r"path\to\images\*.jpg"))]
 
 detector = Yolov8TextDetection(device="cuda")
 polylines = detector.detect(images)
