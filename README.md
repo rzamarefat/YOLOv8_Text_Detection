@@ -9,6 +9,7 @@
 
 ### Sample Results
 ![PPP_3](https://github.com/rzamarefat/YOLOv8_Text_Detection/assets/79300456/84d08057-8c6b-4a14-ae91-dc2fe6005589)
+![fff__0](https://github.com/rzamarefat/yolotext/assets/79300456/d0604fde-d6b4-4021-a203-db8e63cd0df7)
 
 ### Installation
 ```
