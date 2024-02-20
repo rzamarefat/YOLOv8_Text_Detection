@@ -5,6 +5,8 @@
   <h3>
     A Packaged version of YOLOv8 for synthetic and natural scene text detection  
   </h3>
+    <a href="https://pepy.tech/project/yolotext"><img src="https://pepy.tech/badge/yolotext" alt="downloads"></a>
+    <a href="https://badge.fury.io/py/yolotext"><img src="https://badge.fury.io/py/yolotext.svg" alt="pypi version"></a>
 </div>
 
 ### Sample Results
