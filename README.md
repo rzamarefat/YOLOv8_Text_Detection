@@ -1,7 +1,10 @@
 <div align="center">
   <h2>
-    YOLOText: A Packaged version of YOLOv8 for synthetic and natural scene text detection  
+    YOLOText
   </h2>
+  <h3>
+    A Packaged version of YOLOv8 for synthetic and natural scene text detection  
+  </h3>
 </div>
 
 ### Sample Results
